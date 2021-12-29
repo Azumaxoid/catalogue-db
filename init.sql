@@ -48,7 +48,7 @@ INSERT INTO tags (name) VALUES ("action");
 INSERT INTO tags (name) VALUES ("sport");
 INSERT INTO tags (name) VALUES ("black");
 INSERT INTO tags (name) VALUES ("magic");
-INSERT INTO tags (name) VALUES ("green");
+# INSERT INTO tags (name) VALUES ("green");
 
 INSERT INTO sock_tags VALUES ("6d62d909-f957-430e-8689-b5129c0bb75e", "2");
 INSERT INTO sock_tags VALUES ("6d62d909-f957-430e-8689-b5129c0bb75e", "9");

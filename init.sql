@@ -8,8 +8,7 @@ CREATE TABLE IF NOT EXISTS socks (
     price float,
     count int,
     image_url_1 varchar(40),
-    image_url_2 varchar(40),
-    PRIMARY KEY(sock_id)
+    image_url_2 varchar(40)
     );
 
 CREATE TABLE IF NOT EXISTS tags (
@@ -20,11 +19,7 @@ CREATE TABLE IF NOT EXISTS tags (
 
 CREATE TABLE IF NOT EXISTS sock_tags (
     sock_id varchar(40),
-    tag_id MEDIUMINT NOT NULL,
-    FOREIGN KEY (sock_id)
-    REFERENCES socks(sock_id),
-    FOREIGN KEY(tag_id)
-    REFERENCES tags(tag_id)
+    tag_id MEDIUMINT NOT NULL
     );
 
 INSERT INTO socks VALUES ("6d62d909-f957-430e-8689-b5129c0bb75e", "Weave special", "Limited issue Weave socks.", 17.15, 33, "/catalogue/images/weave1.jpg", "/catalogue/images/weave2.jpg");
